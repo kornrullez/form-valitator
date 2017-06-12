@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script src="js/site.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <form id="formulier"  action="succes.html">
+        <div class="form-group">
+            <label for="naam">naam</label>
+            <input type="text" class="form-control" id="naam" placeholder="naam" >
+            <span class="error">This field is required</span>
+        </div>
+        <div class="form-group">
+            <label for="letter">Voor letters</label>
+            <input type="text" class="form-control" id="letter" placeholder="Voor letters" >
+        </div>
+        <div class="form-group">
+            <label for="letter">achternaam</label>
+            <input type="text" class="form-control" id="achternaam" placeholder="achternaam" >
+        </div>
+        <div class="form-group">
+            <label for="letter">Geslacht</label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="geslacht" id="man" value="option1" >
+                    Man
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="geslacht" id="vrouw" value="option2" >
+                    Vrouw
+                </label>
+            </div>
+        </div>
+        <Select required id="options">
+            <option value="">Abonnement soort</option>
+            <option value="dagenlijks">Dagenlijks</option>
+            <option value="wekenlijks">Wekenlijk</option>
+            <option value="maandelijks">Maandelijks</option>
+        </Select>
+        <br><br>
+        <div id="dagenlijks" class="vraag">
+            <div class="checkbox">
+                Extra interesses, <br>
+                <label><input type="checkbox" value="">Sport</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="CHECKBOX" value="">Wetenschap</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" name="CHECKBOX" value="" >Economie</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" name="CHECKBOX"  value="">Cultuur</label>
+            </div>
+            <span class="box1" id="box"> Verplicht een te selecteren</span>
+
+        </div>
+        <div id="wekenlijks" class="vraag">
+            Heeft u interesse in 1 van onderstaande tijdschrijften?
+            <br>
+
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Kijk</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Know How</label>
+            </div>
+            <div class="checkbox ">
+                <label><input type="checkbox" value="" >Quest</label>
+            </div>
+
+        </div>
+        <button id="submit" type="submit" class="btn btn-default">Verstuur</button>
+
+
+
+
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
